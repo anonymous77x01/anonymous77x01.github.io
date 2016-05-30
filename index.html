@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="unknwnqty">
+    <meta name="author" content="anonymous77x01">
+  
+	<title>Unknown Quantity</title>
+
+
+<!-- Bootstrap Core and page CSS// bootstrap was imported under page.design.css -->
+	<link href="css/page.design.css" rel="stylesheet" type='text/css'>
+	<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+	<script src="js/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+<script>
+$(document).ready(function(){
+	//Credits to w3schools 
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+
+
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<!-- Navigation -->	 
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#myPage">UNKNWNQTY</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#services">SERVICES</a></li>
+       <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+ <!-- Header -->
+    <header id="top" class="header container-fluid">
+	<div class="text-vertical-center">
+           <span class="h1cursive">
+				Unknown Quantity
+				<br>at this point<br>
+		   </span>
+		<span class="glyphicon glyphicon-sunglasses btnglyph"></span>
+
+	</div>
+    </header>
+	
+
+ <!-- About -->
+    <section class="content-large container-fluid text-right white-smoke" id="about">
+	<span class="glyphicon glyphicon-paperclip btnglyph dteal-invert" aria-hidden="true"></span>
+     <big> <h2>About UNKNWNQTY</h2>
+      <p><b>
+	 </b><br>
+	 Well, I can be a motivational speaker, quote some famous line from dead people or tell you to never give up just to make you hit 
+	 the button under this paragraph. But no I'm not. I'm a <big>developer</big>. That makes me a wizard. So hit the button, you <i>muggle</i>.
+	 </p><br />
+      <a class="btn btn-default btn-lg" href="about/">More about unknwnqty</a>
+
+    </section>
+	
+
+<!-- This is seriously needing a design haha -->
+<section class="content-small teal container-fluid"  id="portfolio">
+<div class="container-fluid text-center">
+<span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+  <h1>Portfolio</h1>
+  <h4><a href="portfolio/index.html" class="btn btn-light">Check this out</a></h4>
+<br>
+
+  <div class="row text-center">
+
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <p><strong>Undecided</strong></p>
+        <p>Why are you still undecided? Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+		Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+		parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu
+		vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+<button type="button" class="btn btn-default">Read more</button>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="thumbnail">
+         <p><strong>Anonymous</strong></p>
+        <p>Why are you still undecided? Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+		Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+		parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu
+		vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+		<button type="button" class="btn btn-default">Read more</button>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+ <div class="thumbnail">
+       <p><strong>Unknown</strong></p>
+       <p>Why are you still undecided? Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+		Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+		parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu
+		vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+	   <button type="button" class="btn btn-default">Read more</button>
+      </div>
+    </div>
+
+</div>
+</section>
+<!-- Testimonials -->
+
+	<section class="medium-gray content-large container-fluid text-right">
+	<h2>What others say about unknwnqty</h2>
+       <p>Here goes the testimonials! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+		Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+		parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu
+		vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+	   <button type="button" class="btn btn-default">Read more</button>
+	
+	</section>
+
+
+
+
+
+ <section id="services" class="bg-primary content-small container-fluid text-center teal-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Offered Services</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <span class="glyphicon glyphicon-globe glyph-midsize" />
+                            </span>
+                                <h4>
+                                    <strong>VPN Internet</strong>
+                                </h4>
+                                <p>Cannot afford over-priced internet? Try Squash Premium VPN.</p>
+                                <a href="services/index.html" class="btn btn-dark">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <span class="glyphicon glyphicon-console glyph-midsize /">
+                            </span>
+                                <h4>
+                                    <strong>Thesis Prototype</strong>
+                                </h4>
+                                <p>Need to create website or application for you or your group's thesis?</p>
+                                <a href="#" class="btn btn-dark">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                              <span class="glyphicon glyphicon-pencil glyph-midsize " />
+                            </span>
+                                <h4>
+                                    <strong>Tutorials</strong>
+                                </h4>
+                                <p>Having problem understanding a computer subject?</p>
+                                <a href="#" class="btn btn-dark">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <span class="glyphicon glyphicon-education glyph-midsize " />
+                            </span>
+                                <h4>
+                                    <strong>School Project</strong>
+                                </h4>
+                                <p>Got a school project, assignment or activity you can't finish?</p>
+                                <a href="#" class="btn btn-dark">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+
+<section class="content-large teal-dark container-fluid" id="contact">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>No owl available to send me a letter?</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Manila, PH</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +63 813 5332</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> exileprincess26@gmail.com</p> 
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Type a message" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div> 
+    </div>
+  </div>
+</section>
+
+
+<section class="footer text-center medium-gray">
+<a href="#top" class="btn btn-dark">Back to top</a>
+<a href="admin/" class="btn btn-dark">Site Admin</a>
+<span class="btn btn-dark">Copyright 2016</span>
+*insert facebook, linkedin and g+*
+</section>
+
+</body>
+</html>
