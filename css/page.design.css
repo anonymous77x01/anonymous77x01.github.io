@@ -1,0 +1,347 @@
+@import url("bootstrap.css");
+@import url("bootstrap.min.css");
+@import url("../fonts/import-fonts.css");
+
+
+html, body {
+	height:100%;
+	margin:0;
+	padding:0;
+	font-family: "Open Sans",Helvetica,Arial,sans-serif;
+}
+h1 {color: #000;}
+h4 {font-weight: 900;}
+
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+.btnglyph { /* main glyphs */
+	font-size: 90px;
+}
+
+.dteal-invert {
+	color:#00695C;
+	background-color: #F5F7FA;
+}
+.content {
+	letter-spacing: 2px;
+	line-height: 200%;
+	padding: 5% 5% 5% 5%;
+}
+.content-large {
+	padding: 7% 8% 8% 5%;
+	letter-spacing: 2px;
+	line-height: 200%;
+	font-size: 18px;
+}
+
+.content-small {
+	padding: 7% 5% 7% 5%;
+	letter-spacing: 1%;
+	line-height: 150%;
+	font-size: 16px;
+}
+
+.btn-default {
+ background-color: #00695C;
+color:#fff;
+}
+
+.btn-default:hover {
+ background-color: #fff;
+color:#00695C;
+
+}
+
+
+/* Custom Button Styles */
+
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
+
+/* container-fluid is bootstrap */
+
+/* Here goes the NAV Design! */
+/* Add a dark background color with a little bit see-through */ 
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #16937b;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+
+}
+
+/* dark font color to all navbar links */
+.navbar li a, .navbar .navbar-brand { 
+    color: #fff !important;
+}
+
+/* color on hover here */
+.navbar-nav li a:hover {
+	color: #fff !important;
+	background-color: #00695C !important;
+}
+
+/* The active link */
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color:#00695C  !important;
+}
+
+/* Remove border color from the collapsible button */
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+
+/* Main unknwnqtypage header design */
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/car2.jpg) no-repeat center center scroll; /* URL */
+   /* background: #18bc9c; */
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+	color: #fff !important;
+}
+
+.h1cursive {
+font-family: 'Kaushan Script','Open Sans', Arial;
+font-size:7vw;
+color: #fff;
+text-align: center;
+text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+
+/* About */
+.white-smoke {
+ background-color: #F5F7FA;
+ color:#000;
+}
+
+.about-right {
+	padding: 7% 7% 7% 7%;
+	letter-spacing: 2px;
+	line-height: 200%;
+	font-size: 18px;
+	
+    vertical-align: middle;
+	background-color: #F5F7FA;
+}
+.about-left {
+	padding: 7% 7% 7% 7%;
+	letter-spacing: 2px;
+	line-height: 200%;
+	font-size: 18px;
+    vertical-align: middle;
+	background-color: #48CFAD;
+
+}
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+}
+
+.about-glyphs {
+	font-size: 15vw;
+	color: #339d83;
+}
+.bio {
+	padding: 7% 7% 7% 7%;
+	letter-spacing: 2px;
+	font-size: 14px;
+    text-align: justify;
+    text-justify: inter-word;
+	background-color: #F5F7FA;
+}
+
+/* Side Menu 
+/* Side Menu */
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: #222;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-bars:before {
+  content: "\f0c9";
+  
+}
+.fa-times:before {
+  content: "\f00d";
+}
+
+
+/* portfolio */
+.teal {
+ background-color: #004D40;
+color:#fff;
+}
+
+.glyph-midsize {
+font-size: 30px;
+color:#00695C;
+}
+
+.thumbnail {
+padding-top: 2%;
+padding-bottom: 6%;
+color:#000;
+}
+
+/* Testimonials */
+
+.medium-gray {
+ background-color: #E6E9ED;
+ color:#0f5959;
+}
+
+/* Services */
+.teal-light {
+ background-color: #ECEFF1;
+ color:#0f5959;
+}
+
+/* Contact */
+
+.teal-dark {
+ background-color: #0d6859;
+color:#fff;
+}
+
+.light-gray {
+ background-color: #E6E9ED;
+ color:#000;
+}
